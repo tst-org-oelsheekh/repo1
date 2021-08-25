@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('echo') {
       steps {
-        sh 'echo hi from 1st repo'
+        sh 'echo hi from 1st repo from main branch'
       }
     }
   }
