@@ -1,10 +1,10 @@
 pipeline {
-  agent any
+  agent { node { label 'jenkins-slaves' } }
   
   stages {
     stage('echo') {
       steps {
-        sh 'echo hi from 1st repo from main branch'
+        sh 'echo hi from 1st repo from main branch in jenkins-slaves'
       }
     }
   }
